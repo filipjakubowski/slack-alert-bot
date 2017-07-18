@@ -1,8 +1,5 @@
-module SlackAlertBot
+module SlackSmsBot
   class Recipient
-    include ActiveModel::Validations
-
-    attr_accessor  :name, :email, :phone_no
-    validates_presence_of :name, :email, :phone_no
+    attr_accessor :phone_no, :name, :email
   end
 end

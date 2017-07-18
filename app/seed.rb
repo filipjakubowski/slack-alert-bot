@@ -1,11 +1,11 @@
-require './app/models/recipient'
-require './app/models/coms_group'
-filip = SlackAlertBot::Recipient.new()
+require 'slack-sms-bot/models/recipient'
+require 'slack-sms-bot/models/coms_group'
+filip = SlackSmsBot::Recipient.new()
 filip.name = 'Filip'
 filip.email = 'filip@loot.io'
 filip.phone_no = '447534251167'
 
-alert_group = SlackAlertBot::ComsGroup.new()
+alert_group = SlackSmsBot::ComsGroup.new()
 alert_group.recipients.push filip
 
-SlackAlertBot::ComsGroup.add_group :alert_group, alert_group
+SlackSmsBot::ComsGroup.add_group :alert_group, alert_group
