@@ -1,6 +1,6 @@
 require 'sinatra/base'
 
-module SlackSmsBot
+module SlackAlertBot
   class Web < Sinatra::Base
     get '/' do
       'Keep everyone in loop.'

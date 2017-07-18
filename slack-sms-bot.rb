@@ -1,8 +1,0 @@
-require 'slack-sms-bot'
-require 'slack-sms-bot/models/recipient'
-require 'slack-sms-bot/models/coms_group'
-require 'slack-sms-bot/message_providers/nexmo_text_message'
-require 'slack-sms-bot/commands/alert'
-require 'slack-sms-bot/messages/text_message'
-require 'slack-sms-bot/bot'
-require 'slack-sms-bot/seed'

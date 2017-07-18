@@ -1,7 +1,7 @@
-module SlackSmsBot
+module SlackAlertBot
   class ComsGroup
     attr_accessor :recipients
-    
+
     def initialize
       @recipients = Array.new
       @@groups = {}

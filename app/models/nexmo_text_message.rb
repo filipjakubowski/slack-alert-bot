@@ -1,6 +1,6 @@
 require 'nexmo'
 
-module SlackSmsBot
+module SlackAlertBot
   module MessageProviders
     class NexmoTextMessage
       def initialize
@@ -11,7 +11,7 @@ module SlackSmsBot
       end
 
       def send(phone_no, message)
-        response = @client.send_message(from: ENV['SENDER'], to: phone_no, text: message[:message])
+        response = @client.send_message(from: ENV['SENDER'], to: phone_no, text: message)
       end
     end
   end

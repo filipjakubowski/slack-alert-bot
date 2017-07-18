@@ -3,14 +3,13 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'dotenv'
 Dotenv.load
 
-require 'slack-sms-bot'
-require 'web'
+require './config/environment'
 
 Thread.abort_on_exception = true
 
 Thread.new do
   begin
-    SlackSmsBot::Bot.run
+    SlackAlertBot::Bot.run
   rescue Exception => e
     STDERR.puts "ERROR: #{e}"
     STDERR.puts e.backtrace
@@ -18,4 +17,4 @@ Thread.new do
   end
 end
 
-run SlackSmsBot::Web
+run SlackAlertBot::Web

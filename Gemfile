@@ -6,6 +6,9 @@ gem 'sinatra'
 gem 'dotenv'
 gem 'celluloid-io'
 gem 'nexmo'
+gem 'activesupport'
+gem 'activemodel'
+gem 'rack'
 
 group :development, :test do
   gem 'rake'
