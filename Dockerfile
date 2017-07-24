@@ -1,4 +1,4 @@
-FROM ruby:2.4.1
+FROM ruby:slim
 RUN gem install sinatra --no-document
 RUN apt-get update -qq && apt-get install -y build-essential
 ARG ASSET_HOST
