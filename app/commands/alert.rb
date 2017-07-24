@@ -1,12 +1,11 @@
 require 'slack-ruby-bot'
-require 'pry'
 
 module SlackAlertBot
   module Commands
     class Alert < SlackRubyBot::Commands::Base
       command 'alert' do |client, data, _match|
         client.say(channel: data.channel, text: 'alert on the way!')
-        binding.pry
+
         alert_group = ComsGroup.group :alert_group
 
         from = client.users[data.user].nil? ?  "" : "FROM: #{client.users[data.user].name} "
