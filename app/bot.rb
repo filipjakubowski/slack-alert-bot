@@ -1,6 +1,4 @@
-require 'slack-alert-bot'
-
-module SlackSmsBot
+module SlackAlertBot
   class Bot < SlackRubyBot::Bot
   end
 end

@@ -1,5 +1,3 @@
-require 'models/recipient'
-require 'models/coms_group'
 filip = SlackAlertBot::Recipient.new()
 filip.name = 'Filip'
 filip.email = 'filip@loot.io'
