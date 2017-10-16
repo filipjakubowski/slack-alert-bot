@@ -6,6 +6,7 @@ ENV APP_PATH /slack-alert-bot
 
 RUN mkdir -p $APP_PATH
 WORKDIR $APP_PATH
+ADD Gemfile $APP_PATH/app/seed.rb
 ADD Gemfile $APP_PATH/Gemfile
 ADD Gemfile.lock $APP_PATH/Gemfile.lock
 
